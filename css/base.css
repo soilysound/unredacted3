@@ -7,10 +7,6 @@
 	margin: 0 auto;
 }
 
-.site-wrap {
-	padding-top: 110px;
-}
-
 img {
 	transition: opacity 0.2s;
 	will-change: opacity;
