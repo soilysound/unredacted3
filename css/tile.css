@@ -1,0 +1,78 @@
+/*STORY TILE
+============*/
+
+.story-tile {
+	background: white;
+	border: 1px solid var(--stroke);
+	position: relative;
+	display: block;
+	transition: all 0.2s;
+	font-size: 9vw
+}
+
+/*hover states*/
+@media (hover:hover) {
+	.story-tile:hover {
+		filter: drop-shadow(0 0 6px rgba(0,0,0,0.2));
+		border-color: var(--stroke-secondary);
+	}
+}
+
+.story-tile:hover > .story-tile__body > h3,
+.story-tile:focus > .story-tile__body > h3 {
+	color: var(--body-text-secondary);
+}
+
+.story-tile:after {
+	content: "";
+	display: block;
+	padding-bottom: 130%;
+}
+
+.story-tile__image {
+	position: absolute;
+	width: 100%;
+	height: auto;
+	left: 0;
+}
+
+.story-tile__body {
+	background: white;
+	width: 100%;
+	position: absolute;
+	bottom: 0;
+	padding: 0.7em 0
+}
+
+.story-tile__body .content-header {
+	margin: 0;
+	line-height: 1;
+	padding-bottom: 0.3em;
+	font-size: 0.9rem;
+	white-space: nowrap
+}
+
+.story-tile__body h3 {
+	margin: 0;
+	line-height: 1.1;
+	font-size: 1em;
+	white-space: nowrap;
+	letter-spacing: -1px;
+	color: inherit;
+	text-align: center;
+	width: 100%
+}
+
+.story-tile > .article-score {
+	display: none;
+	position: absolute;
+	top: 0.5em;
+	left: 0.5em;
+	z-index: 2;
+	transform: scale(0.9);
+	background: rgba(209, 208, 208, 0.36);
+}
+
+.top-100 .story-tile > .article-score {
+	display: inline-table
+}

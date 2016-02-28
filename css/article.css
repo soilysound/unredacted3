@@ -1,0 +1,180 @@
+/*ARTICLE
+===========*/
+
+.article {
+	background: white;
+}
+
+.article-header {
+	margin-top: -28px;
+	position: relative;
+	padding: 0 1.3em
+}
+
+.article-header > h3 {
+	margin: 0 auto 1em;
+	width: 90%;
+	max-width: 800px;
+	line-height: 1.3;
+	text-align: center
+}
+
+.article-body {
+	margin-bottom: 3em;
+}
+
+.article-body > p:first-of-type {
+	font-size: 1.4em;
+	font-weight: 400;
+}
+
+
+/*article related*/
+.article-related {
+	margin-bottom: 3em;
+}
+
+.article-related > .content-header {
+	margin: 0 0 2em;
+	text-align: center
+}
+
+/*article story*/
+.article-story {
+	text-align: left;
+	margin-bottom: 1.3em;
+	vertical-align: top;
+	display: block
+
+}
+
+.article-story:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+.article-story__headline {
+	color: inherit;
+	line-height: 1;
+	padding: 0.2em 0 0.3em;
+	font-weight: 400;
+	font-size: 1em;
+	margin: 0;
+	width: auto;
+}
+
+.article-story > p {
+	font-size: 0.8em;
+	margin: 0 0 0.4em;
+	line-height: 1.3;
+	color: var(--body-text-secondary)
+}
+
+.article-story > img {
+	width: 14%;
+	min-width: 80px;
+	float: left;
+	margin: 0 0.7em 0 0;
+}
+
+.article-tools {
+	transform: translateY(0.55em);
+	padding-bottom: 0.2em
+}
+
+.article-tools > ul {
+	white-space: nowrap;
+	text-align: center;
+	font-family: sans-serif;
+	font-size: 0.8em;
+}
+
+
+@media all and (min-width: 920px){
+	.article-story {
+		display: inline-block;
+		width: 49%;
+	}
+}
+
+@media all and (min-width: 600px) and (max-width:919px){
+	.article-story {
+		font-size: 1.17em
+	}
+}
+
+@media all and (max-width: 770px){
+	.article-tools {
+		transform: translateY(0.4em);
+		margin-bottom: -0.4em;
+	}
+}
+
+@media all and (max-width: 440px){
+
+	.article-header {
+		padding: 0;
+		margin-top: -24px
+	}
+
+	.article-header > h1 {
+		margin-bottom: 0.4em;
+	}
+
+	.article-header > h3 {
+		width: 100%
+	}
+
+	.article-related > .content-header {
+		margin: 0 0 1em;
+	}
+
+	.article-body {
+		margin-bottom: 2em;
+		font-size: 0.96em
+	}
+
+	.article-body > p:first-of-type {
+		font-size: 1.14em;
+		line-height: 1.34
+	}
+
+	.article-story {
+		margin-bottom: 1.2em;
+	}
+
+	.article-story > img {
+		min-width: 70px;
+		margin: 0 0.5em 0 0;
+	}
+
+	.article-story__headline {
+		font-size: 0.97em;
+		padding-top: 0.3em;
+		white-space: nowrap;
+		overflow: hidden;
+
+	}
+
+	.article-story > p {
+		font-size: 0.74em;
+		line-height: 1.3;
+	}
+
+	.article-tools {
+		transform: translateY(0.16em);
+		margin-bottom: -0.23em;
+		font-size: 1.1em
+	}
+
+	.article-tools li:last-of-type {
+		display: none;
+	}
+}
+
+.article-comments {
+	margin-bottom: 4em;
+	text-align: center;
+}
+

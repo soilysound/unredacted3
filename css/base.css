@@ -1,0 +1,37 @@
+/*SITE
+============*/
+
+.wrap {
+	max-width: 1380px;
+	width: 90%;
+	margin: 0 auto;
+}
+
+.site-wrap {
+	padding-top: 110px;
+}
+
+img {
+	transition: opacity 0.2s;
+	will-change: opacity;
+	opacity: 1
+}
+
+.lazy-image {
+	opacity: 0;
+}
+
+:root {
+
+	/*colors*/
+	--color-primary: #111;
+	--color-secondary: #D50008;
+	--stroke: #bbb;
+	--stroke-secondary: #888;
+	--shade1: #eee;
+	--body-text: #222;
+	--body-text-secondary: #666;
+	--body-text-tertiary: #B0B0B0;
+	--icon-primary: #888
+
+}
