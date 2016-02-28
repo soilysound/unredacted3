@@ -1,6 +1,5 @@
 // Add polyfills
 NodeList.prototype.forEach = Array.prototype.forEach;
-var isSmoothScrollSupported = 'scrollBehavior' in document.documentElement.style;
 
 // remove no-js class
 document.documentElement.className = "js";
@@ -266,6 +265,53 @@ if(!location.hostname.match(/localhost|192.168/)){
       overlay.close();
     }
   }
+
+})();
+
+// SMOOTH SCROLL
+// ========
+
+(function(){
+
+  var isSmoothScrollSupported = 'scrollBehavior' in document.documentElement.style;
+  var oldScrollTo = window.scrollTo;
+
+  if(isSmoothScrollSupported){
+
+  }
+
+  else {
+    window.scrollTo = function(ob){
+      oldScrollTo(ob.left, ob.top);
+    }
+
+  }
+
+  // get elements
+  var scrollMe = document.querySelectorAll('.scroll-me');
+  scrollMe.forEach(function(item){
+    item.onclick = function(e){
+
+      e.preventDefault();
+
+      var targetSel = this.getAttribute('data-target');
+      var targetEl = document.querySelector(targetSel);
+
+      if(!targetEl){
+        return;
+      }
+
+      var y = targetEl.getBoundingClientRect().top + window.pageYOffset;
+
+      window.scrollTo({
+        left: 0,
+        top: y,
+        scrollBehavior: 'smooth'
+      })
+
+    }
+  });
+
 
 })();
 

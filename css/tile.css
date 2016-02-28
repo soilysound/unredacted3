@@ -10,7 +10,7 @@
 	font-size: 9vw
 }
 
-:target {
+:target:not(.article-comments) {
 	outline: 5px solid var(--color-secondary)
 }
 
