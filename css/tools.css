@@ -43,7 +43,7 @@
 	fill: inherit
 }
 
-.article-vote[aria-disabled="true"] {
+.article-vote[aria-disabled="true"] > .article-vote__button {
 	pointer-events: none;
 }
 
