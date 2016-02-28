@@ -315,6 +315,19 @@ if(!location.hostname.match(/localhost|192.168/)){
 
 })();
 
+(function(){
+
+  document.onmousemove = function(){
+    document.documentElement.classList.add('no-focus');
+  }
+
+  document.onkeydown = function(){
+    document.documentElement.classList.remove('no-focus');
+  }
+
+
+})();
+
 
 // FASTCLICK
 // ========

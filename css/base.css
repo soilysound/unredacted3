@@ -18,7 +18,6 @@ img {
 }
 
 :root {
-
 	/*colors*/
 	--color-primary: #111;
 	--color-secondary: #D50008;
@@ -29,5 +28,8 @@ img {
 	--body-text-secondary: #666;
 	--body-text-tertiary: #B0B0B0;
 	--icon-primary: #888
+}
 
+.no-focus a:focus {
+	outline: none;
 }

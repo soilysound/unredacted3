@@ -15,6 +15,13 @@
 	height: 62px;
 	width: 62px;
 	position: relative;
+	transition: transform 0.2s;
+	will-change: transform;
+}
+
+.site-menu__trigger:hover,
+.site-menu__trigger:focus {
+	transform: scale(1.08)
 }
 
 .site-menu__trigger > img {
