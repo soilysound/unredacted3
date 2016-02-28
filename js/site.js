@@ -1,5 +1,6 @@
 // Add polyfills
 NodeList.prototype.forEach = Array.prototype.forEach;
+var isSmoothScrollSupported = 'scrollBehavior' in document.documentElement.style;
 
 // remove no-js class
 document.documentElement.className = "js";
