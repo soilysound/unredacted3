@@ -47,7 +47,8 @@
 	pointer-events: none;
 }
 
-.article-vote__button {
+.article-vote__button,
+.article-tools .link-button {
 	color: var(--body-text-tertiary);
 	fill: var(--body-text-tertiary);
 }
@@ -68,14 +69,14 @@
 	font-weight: 200;
 	display: inline-table;
 	vertical-align: middle;
-	margin-right: 0.4em;
+	margin-right: 0.6em;
 	width: 40px;
 	height: 40px;
 	border-radius: 50%;
 	background: var(--body-text-tertiary);
 	color: white;
 	line-height: 0.1;
-	transform: scale(1.2)
+	transform: scale(1.25)
 }
 
 .article-score__num {

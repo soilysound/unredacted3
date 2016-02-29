@@ -6,8 +6,8 @@
 	z-index: 99;
 	top: 30px;
 	color: white;
-	filter: drop-shadow(0 0 2px rgba(255,255,255,0.4));
-	-webkit-filter: drop-shadow(0 0 2px rgba(255,255,255,0.4));
+	filter: drop-shadow(0 0 3px rgba(255,255,255,1));
+	-webkit-filter: drop-shadow(0 0 3px rgba(255,255,255,1));
 }
 
 .site-menu__trigger {
@@ -92,8 +92,8 @@
 
 /*menu open*/
 .site-menu[aria-hidden="false"] {
-	filter: drop-shadow(0 0 5px rgba(0,0,0,0.3));
-	-webkit-filter: drop-shadow(0 0 5px rgba(0,0,0,0.3));
+	// filter: drop-shadow(0 0 5px rgba(0,0,0,0.3));
+	// -webkit-filter: drop-shadow(0 0 5px rgba(0,0,0,0.3));
 }
 
 .site-menu[aria-hidden="false"] > .site-menu__body {
