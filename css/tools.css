@@ -88,7 +88,8 @@
 
 @media all and (max-width: 380px){
 	.article-score {
-		transform: scale(1.1)
+		transform: scale(1.1);
+		margin-right: 0
 	}
 }
 
