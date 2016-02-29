@@ -100,8 +100,8 @@ h2 {
 @media all and (max-width: 380px){
 	h2 {
 		font-size: 2em;
-		margin-bottom: 0.2;
-		line-height: 1
+		margin-bottom: 0.1;
+		line-height: 1.06
 	}
 }
 

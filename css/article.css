@@ -119,11 +119,11 @@
 	}
 
 	.article-header > h1 {
-		margin-bottom: 0.4em;
+		margin-bottom: 0.35em;
 	}
 
 	.article-header > h3 {
-		width: 100%
+		width: 94%;
 	}
 
 	.article-related > .content-header {
@@ -164,12 +164,16 @@
 
 	.article-tools {
 		transform: translateY(0.16em);
-		margin-bottom: -0.23em;
+		margin-bottom: -0.45em;
 		font-size: 1.1em
 	}
 
 	.article-tools li:last-of-type {
 		display: none;
+	}
+
+	.article-tools li:nth-child(2):after {
+		content: none;
 	}
 }
 
