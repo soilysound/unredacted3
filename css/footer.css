@@ -2,8 +2,8 @@
 ===========*/
 
 .site-footer {
-	padding: 2em 0 1em;
-	background: var(--shade1);
+	padding: 0.2em 0 1em;
+	// background: var(--shade1);
 }
 
 .site-footer__links,
