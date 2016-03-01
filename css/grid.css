@@ -15,7 +15,7 @@
   font-family: georgia;
   font-weight: 400;
   font-size: 1.4em;
-  margin: -1em auto 1em;
+  margin: -1em auto 0.94em;
 }
 
 .story-grid__inner {
@@ -74,7 +74,7 @@
 @media all and (min-width: 761px){
 	.story-grid__header {
 		font-size: 1.9em;
-		margin-bottom: 0.86em
+		margin-bottom: 0.81em
 	}
 }
 
@@ -91,7 +91,7 @@
 @media all and (max-width: 560px){
 
 	.story-grid__header {
-		margin: -0.25em auto 0.5em;
+		margin: -0.25em auto 0.46em;
 	}
 
 	.story-grid__inner {
