@@ -73,8 +73,9 @@
 	top: 0.5em;
 	left: 0.5em;
 	z-index: 2;
-	transform: scale(0.9);
-	background: rgba(209, 208, 208, 0.36);
+	mix-blend-mode: hard-light;
+  transform: scale(.9);
+  background: rgba(65, 65, 65, 0.57);
 }
 
 .top-100 .story-tile > .article-score {

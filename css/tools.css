@@ -76,7 +76,7 @@
 	background: var(--body-text-tertiary);
 	color: white;
 	line-height: 0.1;
-	transform: scale(1.25)
+	transform: scale(1.25);
 }
 
 .article-score__num {
