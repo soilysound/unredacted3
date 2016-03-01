@@ -80,7 +80,8 @@
 
 .article-tools {
 	transform: translateY(0.55em);
-	padding-bottom: 0.2em
+	padding-bottom: 0.2em;
+	visibility: hidden
 }
 
 .article-tools > ul {
@@ -166,7 +167,6 @@
 		transform: translateY(0.16em);
 		margin-bottom: -0.45em;
 		font-size: 1.04em;
-		visibility: hidden
 	}
 
 	.article-tools li:last-of-type {

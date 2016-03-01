@@ -127,7 +127,7 @@ h3 {
 h4 {
 	font-size: 1.8em;
 	font-weight: 400;
-	padding: 1em 0 1.3em;
+	padding: 1.1em 0 1.27em;
 }
 
 h5 {
@@ -162,6 +162,10 @@ figure:first-of-type {
 	margin: 0 -5.6%;
 	width: auto;
 	max-width: 3000px;
+}
+
+figure:first-of-type > figcaption{
+	display: none
 }
 
 /*16-9*/

@@ -30,8 +30,8 @@
 @media (hover:hover){
 	.link-button:hover,
 	.link-button:hover > .icon {
-		color: var(--body-text-secondary);
-		fill: var(--body-text-secondary);
+		color: var(--body-text-secondary)!important;
+		fill: var(--body-text-secondary)!important;
 	}
 }
 
@@ -75,7 +75,6 @@
 	border-radius: 50%;
 	background: var(--body-text-tertiary);
 	color: white;
-	line-height: 0.1;
 	transform: scale(1.25);
 }
 
@@ -83,7 +82,8 @@
 	display: table-cell;
 	vertical-align: middle;
 	font-size: 16px;
-	font-weight: 200;	
+	font-weight: 200;
+	line-height: 0.25;	
 }
 
 @media all and (max-width: 380px){

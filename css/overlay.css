@@ -13,12 +13,10 @@
 	width: 100%;
 	height: 100%;
 	z-index: 99;
-	transform: scale(1.1);
 	opacity: 0;
 	visibility: hidden;
-	transform: all 0.33s;
 	will-change: all;
-	transition: all 0.33s;
+	transition: all 0.5s;
 }
 
 .overlay__close {
@@ -30,13 +28,16 @@
 }
 
 .overlay[aria-hidden="false"]{
-	transform: scale(1);
 	opacity: 1;
 	visibility: visible;
 }
 
+.overlay[aria-hidden="false"] > .overlay__body {
+	transform: translate(-50%,-50%);
+}
+
 .overlay__body {
-	padding: 2em 1em 2.2em;
+	padding: 2em 1em 2.5em;
 	text-align: center;
 	background: white;
 	width: 80%;;
@@ -45,7 +46,8 @@
 	position: absolute;
 	left: 50%;
 	top: 50%;
-	transform: translate(-50%,-50%);
+	transition: all 0.5s;
+	transform: translate(-50%,-150%);
 	filter: drop-shadow(0 0 6px rgba(0,0,0,0.2));
 	border: 1px solid var(--stroke);
 }
@@ -60,7 +62,7 @@
 }
 
 .overlay__body > h5 {
-	margin-bottom: 1em;
+	margin-bottom: 0;
 }
 
 .overlay__body > h3 {

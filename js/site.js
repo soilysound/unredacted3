@@ -241,6 +241,9 @@ if(!location.hostname.match(/localhost|192.168/)){
   }
 };
 
+
+// OVERLAY
+// ========
 (function(){
 
   function close(e){
@@ -279,7 +282,7 @@ if(!location.hostname.match(/localhost|192.168/)){
 
   overlay.onclick = function(e){
     if(!overlayBody.contains(e.target)){
-      overlay.close();
+      overlay.close(e);
     }
   }
 
