@@ -4,6 +4,23 @@ NodeList.prototype.forEach = Array.prototype.forEach;
 // remove no-js class
 document.documentElement.className = "js";
 
+// ARTICLE TOOLS SWITCH
+// ========
+(function(){
+
+  var tools = document.querySelectorAll('.article-tools');
+  if(!tools.length){
+    return;
+  }
+
+  tools[0].parentNode.replaceChild(tools[1], tools[0]);
+  tools[0] = null;
+  tools[1].style.visibility = 'visible';
+
+
+})();
+
+
 // MENU
 // ========
 (function(){
@@ -188,7 +205,7 @@ document.documentElement.className = "js";
           image.readyState === 'complete' && loadedImage.call(image);
         }
       
-        image.setAttribute('srcset', image.src);
+        image.setAttribute('srcset', image.getAttribute('data-srcset'));
         image.setAttribute('src', image.src);
       }
     }
