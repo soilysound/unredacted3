@@ -206,7 +206,7 @@ figure > img[src*="-i2"] + span {
 }
 
 figcaption {
-	font-size: 0.8em;
+	font-size: 0.75em;
 	color: var(--body-text-tertiary);
 	padding: 1em 0.8em 0;
 	font-family: sans-serif;
