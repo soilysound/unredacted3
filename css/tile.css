@@ -74,7 +74,7 @@
 	left: 0.5em;
 	z-index: 2;
 	mix-blend-mode: hard-light;
-  transform: scale(.9);
+  transform: scale(1);
   background: rgba(65, 65, 65, 0.57);
 }
 
