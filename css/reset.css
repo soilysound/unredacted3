@@ -159,10 +159,19 @@ figure {
 }
 
 figure:first-of-type {
-	margin: 0 -5.6%;
 	width: auto;
-	max-width: 3000px;
+	max-width: 1200%
 }
+
+
+@media all and (max-width:1200px){
+	figure:first-of-type {
+		width: auto;
+		margin: 0 -5.6%;
+
+	}
+}
+
 
 figure:first-of-type > figcaption{
 	display: none
