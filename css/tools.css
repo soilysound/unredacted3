@@ -86,6 +86,12 @@
 	line-height: 0.25;	
 }
 
+@supports(-webkit-overflow-scrolling: touch){
+	.article-score__num {
+		transform: translateY(-2.5%)
+	}
+}
+
 @media all and (max-width: 380px){
 	.article-score {
 		transform: scale(1.1);
