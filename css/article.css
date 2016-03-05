@@ -80,11 +80,23 @@
 	color: var(--body-text-secondary)
 }
 
-.article-story > img {
+.article-story__image {
 	width: 14%;
 	min-width: 80px;
 	float: left;
 	margin: 0 0.7em 0 0;
+	position: relative;
+}
+
+.article-story__image:after {
+	content: "";
+	display: block;
+	padding-bottom: 120%
+}
+
+.article-story__image > img {
+	position: absolute;
+	width: 100%;
 }
 
 .article-tools {
@@ -154,7 +166,7 @@
 		margin-bottom: 1.2em;
 	}
 
-	.article-story > img {
+	..article-story__image {
 		min-width: 70px;
 		margin: 0 0.5em 0 0;
 	}
