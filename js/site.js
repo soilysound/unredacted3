@@ -199,6 +199,7 @@ document.documentElement.className = "js";
 
       if(isInViewPort(image)){
         image.addEventListener('load', loadedImage);
+        image.addEventListener('error', loadedImage);
 
         if(window.isOldAndroid || window.isOldIOS){
           image.naturalWidth > 0 && loadedImage.call(image);
