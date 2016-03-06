@@ -220,6 +220,8 @@ figcaption {
 	color: var(--body-text-tertiary);
 	padding: 1em 0.8em 0;
 	font-family: sans-serif;
+	line-height: 1.3
+
 }
 
 ul {
