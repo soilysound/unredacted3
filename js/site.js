@@ -4,6 +4,10 @@ NodeList.prototype.forEach = Array.prototype.forEach;
 // remove no-js class
 document.documentElement.className = "js";
 
+if(location.hash.match('editmode')){
+  document.body.contentEditable = true;
+}
+
 // ARTICLE TOOLS SWITCH
 // ========
 (function(){
